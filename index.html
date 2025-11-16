@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Event</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js"></script>
+</head>
+
+<body>
+
+  <h2>Create Event</h2>
+
+  <form id="eventForm">
+    
+    <div class="form-group">
+      <label>Event Title</label>
+      <input id="event_title" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Region</label>
+      <select id="region" required>
+        <option value="">Select region...</option>
+        <option value="APAC-EMEA">APAC-EMEA</option>
+        <option value="Americas">Americas</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input id="date" type="date" required>
+    </div>
+
+    <div class="form-group">
+      <label>Timeline</label>
+      <input id="timeline" type="text" placeholder="09:00 – 10:00 CET">
+    </div>
+
+    <div class="form-group">
+      <label>Register</label>
+      <input id="register" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Title</label>
+      <input id="title" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Why to attend</label>
+      <textarea id="why_to_attend"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Speaker</label>
+      <input id="speaker" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Slides Title</label>
+      <input id="slides_title" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Slides Link</label>
+      <input id="slides_link" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Agenda</label>
+      <textarea id="agenda"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Feedback form</label>
+      <input id="feedback_form" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Questions</label>
+      <input id="questions" type="text">
+    </div>
+
+    <div class="form-group">
+      <label>Invitations</label>
+      <textarea id="invitations"></textarea>
+    </div>
+
+    <button type="submit">Send to n8n</button>
+  </form>
+
+  <pre id="result"></pre>
+
+  <script src="form.js"></script>
+
+</body>
+</html>
